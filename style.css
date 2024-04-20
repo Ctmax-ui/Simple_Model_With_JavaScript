@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #1592b8;
+}
+
+
+.heading{
+    margin: 20px auto;
+    color: #ffffff;
+    width: fit-content;
+    text-align: center;
+}
+.modal-container{
+    width: 1140px;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+
+}
+
+/* start modal */
+.modal-content-box{
+    width: 350px;
+    height: 230px;
+    overflow: hidden;
+    border: 10px solid #036280;
+    border-radius: 10px;
+}
+.modal-content-box img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+
+.modal-content-box p{
+    margin-top: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.modal-hover-box{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.582);
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 50px;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal-main-box{
+    margin: auto;
+    width: 50%;
+    height: 90px;
+}
+.modal-main-box img{
+    border: 9px solid #0781c7;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    
+}
+
+/* end modal */
+
+.button-group{
+    display: flex;
+    justify-content: space-between;
+}
+.button-group button{
+    width: min-content;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #ffffff;
+    border: 2px solid transparent;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+    border-radius: 10%;
+    cursor: pointer;
+    border-radius: 10px !important;
+    letter-spacing: 2px !important;
+}
+.button-group button:hover{
+    background-color: #0075e2;
+    border: 2px solid #0075e2;
+    color: #ffffff;
+
+}
+
+
+@media (max-width: 1200px) {
+    .modal-container{
+        width: fit-content;
+        grid-template-columns: auto auto;
+    }
+}
+@media (max-width: 800px) {
+    .modal-container{
+        grid-template-columns: auto;
+    }
+}
+@media (max-width: 450px) {
+    .modal-container{
+        width: 90%;
+        grid-template-columns: auto;
+    }
+    .modal-content-box{
+        width: auto;
+        height: auto;
+        color: #ffffff;
+
+    }
+}
