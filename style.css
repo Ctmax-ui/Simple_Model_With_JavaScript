@@ -48,6 +48,7 @@ body{
 
 .modal-hover-box{
     width: 100%;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.582);
     position: fixed;
     top: 0;
